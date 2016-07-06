@@ -1,0 +1,244 @@
+body {
+  line-height: normal;
+  font-weight: normal;
+  -webkit-text-size-adjust: none;
+  -ms-touch-action: none; }
+
+[contenteditable] {
+  -webkit-user-select: text;
+  user-select: text; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  cursor: context-menu;
+  color: inherit;
+  cursor: pointer; }
+  a img {
+    border: none; }
+
+a:hover {
+  text-decoration: none; }
+
+input[type="submit"] {
+  cursor: pointer; }
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0px; }
+
+input[type=number] {
+  -moz-appearance: textfield; }
+
+input[type="button"] {
+  -webkit-appearance: button; }
+
+button {
+  border: none;
+  -webkit-appearance: none; }
+
+body {
+  font-size: 12px; }
+
+@media screen and (min-width: 240px) and (max-width: 320px) {
+  body {
+    font-size: 12px; } }
+@media screen and (min-width: 320px) and (max-width: 360px) {
+  body {
+    font-size: 12px; } }
+@media screen and (min-width: 360px) and (max-width: 375px) {
+  body {
+    font-size: 13px; } }
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  body {
+    font-size: 14px; } }
+@media screen and (min-width: 414px) and (max-width: 480px) {
+  body {
+    font-size: 15px; } }
+@media screen and (min-width: 480px) and (max-width: 568px) {
+  body {
+    font-size: 16px; } }
+@media screen and (min-width: 568px) and (max-width: 640px) {
+  body {
+    font-size: 17px; } }
+@media screen and (min-width: 640px) and (max-width: 736px) {
+  body {
+    font-size: 18px; } }
+html {
+  font-family: 'Arimo', sans-serif; }
+
+aside .categories .category {
+  margin-top: 12px;
+  font-size: 16px;
+  color: #767676; }
+  aside .categories .category.active {
+    color: #282c37; }
+    aside .categories .category.active li {
+      max-height: 20px;
+      opacity: 1;
+      margin: 6px 3px 0; }
+      aside .categories .category.active li:first-of-type {
+        margin-top: 15px; }
+      aside .categories .category.active li:last-of-type {
+        margin-bottom: 23px; }
+  aside .categories .category li {
+    font-size: 14px;
+    color: #767676;
+    list-style: disc inside;
+    max-height: 0;
+    -webkit-transition: max-height .3s;
+    transition: max-height .3s;
+    opacity: 0;
+    cursor: pointer; }
+    aside .categories .category li.active {
+      color: #010101;
+      text-decoration: underline; }
+
+.breadcrumbs {
+  margin: 35px 0; }
+  .breadcrumbs a:first-of-type li {
+    margin-left: 0; }
+    .breadcrumbs a:first-of-type li:before {
+      display: none;
+      margin-left: 0; }
+  .breadcrumbs a:last-of-type li {
+    color: #767676; }
+  .breadcrumbs a li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 13px;
+    color: #282c37;
+    font-size: 14px; }
+    .breadcrumbs a li:before {
+      content: "";
+      display: inline-block;
+      height: 7px;
+      width: 4px;
+      margin-right: 11px;
+      background: url("../img/next.png"); }
+
+.content-row {
+  width: 1000px;
+  padding: 0 10px;
+  margin: 0 auto; }
+
+.header {
+  height: 94px;
+  background: #f7f7f7; }
+  .header .content-row {
+    height: 100%; }
+  .header .logo {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    height: 100%;
+    vertical-align: top; }
+    .header .logo img {
+      vertical-align: middle;
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0;
+      -moz-box-flex: 0;
+      -moz-flex: 0 0;
+      -ms-flex: 0 0;
+      flex: 0 0; }
+  .header .phones {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    vertical-align: top;
+    height: 100%;
+    margin: 0 20px;
+    float: right; }
+  .header .phone {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0;
+    -moz-box-flex: 0;
+    -moz-flex: 0 0;
+    -ms-flex: 0 0;
+    flex: 0 0;
+    font-size: 18px;
+    color: #767676; }
+  .header .feedback {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    height: 100%;
+    vertical-align: top;
+    float: right; }
+    .header .feedback .button {
+      height: 36px;
+      padding: 0 20px;
+      text-transform: uppercase;
+      font-size: 15px;
+      color: #fff;
+      background: #282c37; }
+
+.nav {
+  background: #282c37; }
+  .nav ul {
+    height: 80px;
+    text-align: center; }
+    .nav ul li {
+      display: inline-block;
+      height: 16px;
+      padding: 0 46px;
+      margin-top: 32px;
+      font-size: 15px;
+      color: #fff;
+      list-style: none;
+      text-transform: uppercase;
+      border-right: 1px solid #424757;
+      cursor: pointer; }
+      .nav ul li:hover {
+        text-decoration: underline; }
+      .nav ul li:last-of-type {
+        border-right: none; }
+
+.slider {
+  height: 537px; }
+
+/*# sourceMappingURL=main.css.map */

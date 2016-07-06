@@ -1,0 +1,32 @@
+.breadcrumbs {
+  margin: 35px 0;
+  a {
+    &:first-of-type li {
+      margin-left: 0;
+
+      &:before {
+        display: none;
+        margin-left: 0;
+      }
+    }
+    &:last-of-type li {
+      color: #767676;
+    }
+    li {
+      display: inline-block;
+      list-style: none;
+      margin-left: 13px;
+      color: #282c37;
+      font-size: 14px;
+
+      &:before {
+        content: "";
+        display: inline-block;
+        height: 7px;
+        width: 4px;
+        margin-right: 11px;
+        background: url("../img/next.png")
+      }
+    }
+  }
+}

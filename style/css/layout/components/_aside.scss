@@ -1,0 +1,38 @@
+aside {
+  .categories {
+    .category {
+      margin-top: 12px;
+      font-size: 16px;
+      color: #767676;
+      &.active {
+        color: #282c37;
+        li {
+          max-height: 20px;
+          opacity: 1;
+          margin: 6px 3px 0;
+
+          &:first-of-type {
+            margin-top: 15px;
+          }
+          &:last-of-type {
+            margin-bottom: 23px;
+          }
+        }
+      }
+      li {
+        font-size: 14px;
+        color: #767676;
+        list-style: disc inside;
+        max-height: 0;
+        -webkit-transition: max-height .3s;
+        transition: max-height .3s;
+        opacity: 0;
+        cursor: pointer;
+        &.active {
+          color: #010101;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.nav {
+    background: #282c37;
+  ul {
+    height: 80px;
+    text-align: center;
+    li {
+      display: inline-block;
+      height: 16px;
+      padding: 0 46px;
+      margin-top: 32px;
+      font-size: 15px;
+      color: #fff;
+      list-style: none;
+      text-transform: uppercase;
+      border-right: 1px solid #424757;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+      &:last-of-type {
+        border-right: none;
+      }
+    }
+  }
+}

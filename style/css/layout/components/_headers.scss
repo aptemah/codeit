@@ -1,0 +1,55 @@
+.header {
+  height: 94px;
+  background: #f7f7f7;
+
+  .content-row {
+    height: 100%;
+  }
+  .logo {
+    @include inline-flex;
+    @include flex-direction(column);
+    @include justify-content(center);
+
+    height: 100%;
+    vertical-align: top;
+
+    img {
+      vertical-align: middle;
+
+      @include flex(0, 0);
+    }
+  }
+  .phones {
+    @include inline-flex;
+    @include flex-direction(column);
+    @include justify-content(center);
+
+    vertical-align: top;
+    height: 100%;
+    margin: 0 20px;
+    float: right;
+  }
+  .phone {
+    @include flex(0, 0);
+
+    font-size: 18px;
+    color: #767676;
+  }
+  .feedback {
+    @include inline-flex;
+    @include flex-direction(column);
+    @include justify-content(center);
+    height: 100%;
+    vertical-align: top;
+    float: right;
+
+    .button {
+      height: 36px;
+      padding: 0 20px;
+      text-transform: uppercase;
+      font-size: 15px;
+      color: #fff;
+      background: #282c37;
+    }
+  }
+}

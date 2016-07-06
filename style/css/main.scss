@@ -1,0 +1,19 @@
+@import 'base/_base';
+@import 'base/_flex_mixins';
+@import 'layout/_layout';
+
+@import 'layout/pages/_main_page';
+
+@import 'layout/components/_aside';
+@import 'layout/components/_buttons';
+@import 'layout/components/_breadcrumbs';
+@import 'layout/components/_content';
+@import 'layout/components/_footers';
+@import 'layout/components/_headers';
+@import 'layout/components/_inputs';
+@import 'layout/components/_nav';
+@import 'layout/components/_popup';
+@import 'layout/components/_products';
+@import 'layout/components/_slider';
+
+@import 'state/_state';
