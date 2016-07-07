@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <title>CodeIt</title>
     <link href="style/css/main.css" rel="stylesheet">
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/jquery.touchslider.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
 
@@ -43,7 +46,19 @@
   </nav>
 
 
-  <div class="slider"></div>
+  <div class="slider">
+    <div class="touchslider">
+        <div class="touchslider-viewport" style="overflow:hidden"><div>
+            <div class="touchslider-item" style="background-image: url('custom_content/picture.jpg')"></div>
+            <div class="touchslider-item" style="background-image: url('custom_content/P60604-195016-PANO.jpg')"></div>
+        </div></div>
+
+        <div class="touchslider-nav">
+            <span class="touchslider-nav-item touchslider-nav-item-current"></span>
+            <span class="touchslider-nav-item"></span>
+        </div>
+    </div>
+  </div>
 
 
   <div class="content-row">

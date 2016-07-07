@@ -1,3 +1,23 @@
 .slider {
   height: 537px;
+  .touchslider-item {
+    background: center / cover;
+  }
+  .touchslider-nav {
+    display: block;
+    width: 100%;
+    margin: -28px 0 0;
+    position: absolute;
+    text-align: center;
+  }
+  .touchslider-nav-item {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 4px;
+    background: url(../img/slider.png);
+  }
+  .touchslider-nav-item-current {
+    background-position: right;
+  }
 }

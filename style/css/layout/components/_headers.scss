@@ -15,7 +15,7 @@
 
     img {
       vertical-align: middle;
-
+      height: 50px;
       @include flex(0, 0);
     }
   }

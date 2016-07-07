@@ -153,6 +153,7 @@ aside .categories .category {
     vertical-align: top; }
     .header .logo img {
       vertical-align: middle;
+      height: 50px;
       -webkit-box-flex: 0;
       -webkit-flex: 0 0;
       -moz-box-flex: 0;
@@ -240,5 +241,21 @@ aside .categories .category {
 
 .slider {
   height: 537px; }
+  .slider .touchslider-item {
+    background: center / cover; }
+  .slider .touchslider-nav {
+    display: block;
+    width: 100%;
+    margin: -28px 0 0;
+    position: absolute;
+    text-align: center; }
+  .slider .touchslider-nav-item {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 4px;
+    background: url(../img/slider.png); }
+  .slider .touchslider-nav-item-current {
+    background-position: right; }
 
 /*# sourceMappingURL=main.css.map */
