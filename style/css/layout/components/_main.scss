@@ -1,0 +1,30 @@
+.main {
+  width: 790px;
+  padding: 14px 0;
+  display: inline-block;
+  margin-right: -20px;
+  float: right;
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+.text-block {
+  border-top: 1px solid #777;
+  > div {
+    display: inline-block;
+    width: 49%;
+    margin-top: 37px;
+    padding: 0 8px;
+    color: #767676;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .left-column {
+    float: left;
+  }
+  .right-column {
+    float: right;
+  }
+}

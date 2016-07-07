@@ -1,0 +1,16 @@
+.price-download {
+  margin: 73px 0;
+  font-size: 16px;
+  vertical-align: middle;
+  font-weight: bold;
+  cursor: pointer;
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 42px;
+    height: 40px;
+    margin: -5px 10px 0 0;
+    background: url("../img/price.png");
+    vertical-align: middle;
+  }
+}

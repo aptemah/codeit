@@ -10,6 +10,20 @@ document.addEventListener("DOMContentLoaded", ready);
 
 function ready() {
 
+  //scroll width
+  var div = document.createElement('div');
+
+  div.style.overflowY = 'scroll';
+  div.style.width = '50px';
+  div.style.height = '50px';
+
+  div.style.visibility = 'hidden';
+
+  document.body.appendChild(div);
+  var scrollWidth = div.offsetWidth - div.clientWidth;
+  document.body.removeChild(div);
+
+
   var heightOfSlider = 537;
 
   var sliderViewport = document.querySelector(".touchslider-viewport"),
@@ -29,12 +43,10 @@ function ready() {
       if (viewportWidth > 1000) {
 
 
-      sliderViewport.style.width = viewportWidth + "px";
+      sliderViewport.style.width = viewportWidth - scrollWidth + "px";
       for (var i = 0; i < sliderItems.length; ++i) {
-        sliderItems[i].style.width = viewportWidth + "px";
+        sliderItems[i].style.width = viewportWidth - scrollWidth + "px";
       }
-
-      
 
     }
   }
@@ -42,5 +54,24 @@ function ready() {
   $( window ).resize(function() {
     sliderSize();
   });
+
+  $("#feedback").on("click", function () {
+    $(".popup").addClass("show");
+  });
+
+  $(".popup").on("click", function () {
+    $(".popup").removeClass("show");
+  });
+
+  $(".popup .close").on("click", function () {
+    $(".popup").removeClass("show");
+  });
+
+  $(".popup .content").on("click", function (e) {
+    e.stopPropagation();
+  });
+
 };
+
+
 

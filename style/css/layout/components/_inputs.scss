@@ -1,0 +1,49 @@
+.input-reg {
+  margin: 16px 0;
+
+  >div.required {
+    margin: 5px 0;
+    font-size: 14px;
+
+    &:after {
+      content: " *";
+      color: #c61015;
+    }
+  }
+  input {
+    width: 341px;
+    height: 42px;
+    color: #535353;
+    font-size: 14px;
+    border: 1px solid #c3c3c3;
+    padding: 0px 13px;
+  }
+  textarea {
+    width: 341px;
+    height: 142px;
+    color: #535353;
+    font-size: 14px;
+    border: 1px solid #c3c3c3;
+    padding: 13px 13px;
+  }
+  .error {
+    border-color: rgb(255, 131, 131);
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset 0px 0px 13px 0px rgba(228, 106, 106, 0.75);
+  }
+  textarea:-moz-placeholder,
+  input:-moz-placeholder{
+    color: #dc7f7f;
+    font-style: italic;
+  }
+  textarea:-ms-input-placeholder,
+  input:-ms-input-placeholder{
+    color: #dc7f7f;
+    font-style: italic;
+  }
+  textarea::-webkit-input-placeholder,
+  input::-webkit-input-placeholder{
+    color: #dc7f7f;
+    font-style: italic;
+  }
+}

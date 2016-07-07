@@ -15,12 +15,12 @@
   <header class="header">
     <div class="content-row">
 
-      <div class="logo"><!--
-     --><img src="custom_content/logo.png" width="200" height="47" alt="CODE IT"><!--
-   --></div>
+      <div class="logo">
+        <img src="custom_content/logo.png" width="200" height="47" alt="CODE IT">
+      </div>
 
       <div class="feedback">
-        <button class="button">Feedback</button>
+        <button class="button" id="feedback">Feedback</button>
       </div>
 
       <div class="phones">
@@ -69,7 +69,9 @@
     </ul>
   </div>
 
+
   <div class="content-row">
+
     <aside class="aside">
       <div class="categories">
         <ul class="category">Cars
@@ -89,11 +91,128 @@
         <ul class="category">Clothing</ul>
         <ul class="category">Real Estate</ul>
       </div>
+      <div class="price-download"> Price List</div>
     </aside>
 
+    <main class="main">
 
-    <div class="products"></div>
+      <div class="products">
+
+        <div class="item">
+          <div class="image" style="background-image: url('custom_content/oven.jpg')"></div>
+          <div class="description">Lorem ipsum dolor sit amet, consectetur doler adipiscing elit.</div>
+          <div class="price">$ <span>550.95</span>
+            <div class="to-cart"></div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="image" style="background-image: url('custom_content/oven.jpg')"></div>
+          <div class="description">Lorem ipsum dolor sit amet, consectetur doler adipiscing elit.</div>
+          <div class="price">$ <span>550.95</span>
+            <div class="to-cart"></div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="image" style="background-image: url('custom_content/oven.jpg')"></div>
+          <div class="description">Lorem ipsum dolor sit amet, consectetur doler adipiscing elit.</div>
+          <div class="price">$ <span>550.95</span>
+            <div class="to-cart"></div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="image" style="background-image: url('custom_content/oven.jpg')"></div>
+          <div class="description">Lorem ipsum dolor sit amet, consectetur doler adipiscing elit.</div>
+          <div class="price">$ <span>550.95</span>
+            <div class="to-cart"></div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="image" style="background-image: url('custom_content/oven.jpg')"></div>
+          <div class="description">Lorem ipsum dolor sit amet, consectetur doler adipiscing elit.</div>
+          <div class="price">$ <span>550.95</span>
+            <div class="to-cart"></div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="image" style="background-image: url('custom_content/oven.jpg')"></div>
+          <div class="description">Lorem ipsum dolor sit amet, consectetur doler adipiscing elit.</div>
+          <div class="price">$ <span>550.95</span>
+            <div class="to-cart"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pagination">
+        <a class="page" href="#">1</a>
+        <a class="page" href="#">2</a>
+        <a class="page active" href="#">3</a>
+        <a class="page" href="#">4</a>
+        <a class="page" href="#">5</a>
+        <a class="page" href="#">6</a>
+        <a class="page" href="#">7</a>
+      </div>
+
+      <div class="text-block">
+        <div class="left-column">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper lacinia auctor. Aliquam vitae mi ornare, tincidunt risus sed, euismod nisl. Nullam imperdiet nisi ut est imperdiet posuere. Cras sodales molestie enim eget porta. Vestibulum scelerisque blandit pulvinar. Donec condimentum malesuada neque a blandit. In sodales ex ac pharetra dictum. In interdum facilisis justo. Maecenas sit amet mi vitae purus ultrices fermentum. In vel orci erat. Suspendisse potenti. Donec arcu nunc, imperdiet id neque nec, mollis viverra nisl. Fusce egestas ligula vitae tristique dignissim.</div>
+        <div class="right-column">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper lacinia auctor. Aliquam vitae mi ornare, tincidunt risus sed, euismod nisl. Nullam imperdiet nisi ut est imperdiet posuere. Cras sodales molestie enim eget porta. Vestibulum scelerisque blandit pulvinar. Donec condimentum malesuada neque a blandit. In sodales ex ac pharetra dictum. In interdum facilisis justo. Maecenas sit amet mi vitae purus ultrices fermentum. In vel orci erat. Suspendisse potenti. Donec arcu nunc, imperdiet id neque nec, mollis viverra nisl. Fusce egestas ligula vitae tristique dignissim.</div>
+      </div>
+
+    </main>
+    <div class="spacer" style="clear: both;"></div>
+
   </div>
+
+  <div class="footer">
+    <div class="content-row">
+      <div class="copy">© CodeIT 2012–2013,</br>
+  All Rights Reserved. </div>
+      <ul class="nav-footer">
+        <li>Home</li>
+        <li>Catalog</li>
+        <li>Shipping and payment</li>
+        <li>Price</li>
+        <li>Contacts</li>
+      </ul>
+    </div>
+  </div>
+
+
+<div class="popup">
+  <div class="content">
+
+    <h3 class="popup-header">feedback</h3>
+
+    <div class="input-reg">
+      <div class="required">Name</div>
+      <input type="text">
+    </div>
+    
+    <div class="input-reg">
+      <div class="required">Phone</div>
+      <input type="number">
+    </div>
+
+    <div class="input-reg">
+      <div class="required">Email</div>
+      <input class="error" type="email" placeholder="E-mail is mandatory field">
+    </div>
+
+    <div class="input-reg">
+      <div class="required">Text</div>
+      <textarea></textarea>
+    </div>
+  
+    <button class="button">submit</button>
+    <div class="close"></div>
+  </div>
+</div>
+
 
 </body>
 </html>
