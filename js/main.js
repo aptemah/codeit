@@ -1,14 +1,11 @@
+'use strict'
+
 jQuery(function($) {
     $(".touchslider").touchSlider({
       delay: 4000, // initial auto-scrolling delay for each loop
       mouseTouch: false,
       autoplay: true, // whether to move from image to image automatically
     });
-});
-
-document.addEventListener("DOMContentLoaded", ready);
-
-function ready() {
 
   //scroll width
   var div = document.createElement('div');
@@ -24,7 +21,8 @@ function ready() {
   document.body.removeChild(div);
 
 
-  var heightOfSlider = 537;
+  const heightOfSlider = 537;
+  const proportionsOfSlider = 0.537;
 
   var sliderViewport = document.querySelector(".touchslider-viewport"),
       sliderItems = document.querySelectorAll(".touchslider-item");
@@ -39,8 +37,18 @@ function ready() {
 
     var viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
-
-      if (viewportWidth > 1000) {
+    if (viewportWidth < 1000) {
+      var relativeHeightOfSlider = viewportWidth * proportionsOfSlider;
+      sliderViewport.style.height = relativeHeightOfSlider + "px";
+      for (var i = 0; i < sliderItems.length; ++i) {
+        sliderItems[i].style.height = relativeHeightOfSlider + "px";
+      }
+    } else {
+      sliderViewport.style.height = heightOfSlider + "px";
+      for (var i = 0; i < sliderItems.length; ++i) {
+        sliderItems[i].style.height = heightOfSlider + "px";
+      }
+    };
 
 
       sliderViewport.style.width = viewportWidth - scrollWidth + "px";
@@ -48,7 +56,6 @@ function ready() {
         sliderItems[i].style.width = viewportWidth - scrollWidth + "px";
       }
 
-    }
   }
 
   $( window ).resize(function() {
@@ -70,8 +77,4 @@ function ready() {
   $(".popup .content").on("click", function (e) {
     e.stopPropagation();
   });
-
-};
-
-
-
+});

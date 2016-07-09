@@ -28,3 +28,35 @@
     float: right;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 1000px) {
+  .main {
+    width: 100%;
+    padding: 14px 0;
+    margin: 30px 0 0;
+    display: inline-block;
+    float: none;
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+  .text-block {
+    border-top: 1px solid #777;
+    > div {
+      display: inline-block;
+      width: 49%;
+      margin-top: 37px;
+      padding: 0 8px;
+      color: #767676;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .left-column {
+      float: left;
+    }
+    .right-column {
+      float: right;
+    }
+  }
+}
