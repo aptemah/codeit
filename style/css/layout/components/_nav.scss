@@ -37,3 +37,32 @@
     }
   }
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .nav {
+    background: #282c37;
+    ul {
+      height: auto;
+      li {
+        height: 16px;
+        margin: 32px 5px;
+        padding: 0 10px;
+        border: none;
+      }
+    }
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 640px) {
+  .nav {
+    background: #282c37;
+    ul {
+      height: auto;
+      li {
+        height: auto;
+        display: block;
+        padding: 5px 5px;
+        margin: 0;
+        border: none;
+      }
+    }
+  }
+}

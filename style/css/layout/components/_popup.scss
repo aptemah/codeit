@@ -24,6 +24,7 @@
     position: relative;
     background: #fff;
     display: inline-block;
+    width: 469px;
     padding: 30px 64px 25px;
     .popup-header {
       display: block;
@@ -46,5 +47,33 @@
     height: 27px;
     cursor: pointer;
     background: #fff url("../img/close.png") center / 15px 15px no-repeat;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 568px) {
+  .popup {
+    overflow: auto;
+    
+    .content {
+      @include flex(0,0);
+
+      position: relative;
+      width: 85%;
+      margin: 27px 27px 0 27px;
+      background: #fff;
+      display: inline-block;
+      padding: 30px 20px 25px;
+      
+      .popup-header {
+        display: block;
+        margin: 0 0 25px;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .button {
+        margin: 0 0 44px;
+      }
+    }
   }
 }
