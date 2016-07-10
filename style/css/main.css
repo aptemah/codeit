@@ -580,29 +580,33 @@ html {
 
 @media screen and (min-width: 320px) and (max-width: 568px) {
   .popup {
-    overflow: auto; }
+    display: block;
+    overflow-y: auto; }
     .popup .content {
-      -webkit-box-flex: 0;
-      -webkit-flex: 0 0;
-      -moz-box-flex: 0;
-      -moz-flex: 0 0;
-      -ms-flex: 0 0;
-      flex: 0 0;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1;
+      -moz-box-flex: 1;
+      -moz-flex: 1 1;
+      -ms-flex: 1 1;
+      flex: 1 1;
+      min-height: min-content;
       position: relative;
       width: 85%;
-      margin: 27px 27px 0 27px;
-      background: #fff;
-      display: inline-block;
+      height: auto;
+      margin: 27px;
       padding: 30px 20px 25px; }
       .popup .content .popup-header {
         display: block;
-        margin: 0 0 25px;
-        text-transform: uppercase;
-        font-size: 24px;
-        font-weight: bold;
-        text-align: center; }
-      .popup .content .button {
-        margin: 0 0 44px; } }
+        margin: 0 0 25px; }
+    .popup .close {
+      position: absolute;
+      top: -27px;
+      right: -27px;
+      display: inline-block;
+      width: 27px;
+      height: 27px;
+      cursor: pointer;
+      background: #fff url("../img/close.png") center/15px 15px no-repeat; } }
 .price-download {
   margin: 73px 0;
   font-size: 16px;
